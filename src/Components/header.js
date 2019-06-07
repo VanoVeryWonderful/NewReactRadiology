@@ -4,8 +4,25 @@ import '../index.css'
 
 
 class Header extends React.Component {
+  constructor(){
+    super()
+    this.state = {
+      showMenu: false
+    }
 
+    this.handleClick = this.handleClick.bind(this)
+  }
 
+handleClick() {
+  const openMenu = this.state.showMenu;
+  this.setState(prevState => {
+    return ({
+      showMenu: !prevState.showMenu
+    })
+
+  });
+
+}
   render(){
     return(
       <header>
@@ -15,7 +32,7 @@ class Header extends React.Component {
            </a>
          </div>
          <nav>
-      		<div className="navtop" id="myTopnav">
+      		<div className= {this.state.showMenu ? "navtop responsive": "navtop"}>
       			<a href="#" className= "_pink">Home</a>
       			<a href="#">CT Normal Anatomy</a>
       			<a href="#">Oncology Cases</a>
@@ -25,7 +42,7 @@ class Header extends React.Component {
       			    <input type="text" className="input_search" />
       			    <button className="btn_search" type="button">Search</button>
       		  </div>
-      			<a href="#" id="menu" className="menu_icon">&#9776;</a>
+      			<a href="#" onClick={this.handleClick} className="menu_icon">&#9776;</a>
       		</div>
       	</nav>
       </header>

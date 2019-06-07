@@ -263,7 +263,7 @@ button:focus{outline:0}
 	.navtop a.menu_icon {
 		float: right;
 		display: block;
-		color: pink;
+		color: #000;
 		margin-right: 10px;
 		padding-left: 4px;
 		padding-right: 4px;
@@ -288,8 +288,9 @@ button:focus{outline:0}
 		margin-top: -15px;
 		color:#000;
 	}
-	.menu_icon:hover{
+	a.menu_icon:hover{
 		background: #fff;
+
 	}
 	.navtop.responsive a{
 		float: none;
