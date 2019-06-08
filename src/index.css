@@ -13,6 +13,21 @@ body {
 	font-family: 'Raleway', sans-serif;
 	background-color: #000;
 }
+
+.textCenter {
+	text-align: center;
+	padding: 20px;
+	color: #fff;
+}
+
+.simpleSlaider {
+	width: 100%;
+}
+
+.slaiderImg {
+	width: 400px;
+}
+
 .navbar_ {
     width: 100%;
     background: #000;
@@ -127,13 +142,14 @@ button:focus{outline:0}
 
 }
 
-#slaider {
+.slaider {
 	width: 40%;
-	margin-top: 20px;
+
+	margin-bottom: 20px;
 }
 
 
-#slaider img {
+.slaider img {
 	width: 100%;
 	height: auto;
 }
@@ -348,7 +364,7 @@ button:focus{outline:0}
 	.content_anatomy_part a{
 		padding: 3px;
 	}
-	#slaider {
+	.slaider {
 		width: 50%;
 	}
 	._pink {
@@ -377,7 +393,7 @@ button:focus{outline:0}
 	.navtop_footer a{
 		font-size: 10px;
 	}
-	#slaider {
+	.slaider {
 		width: 70%;
 	}
 	.anatomy_part {
