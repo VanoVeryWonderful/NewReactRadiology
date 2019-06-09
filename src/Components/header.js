@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../logo.png'
 import '../index.css'
-
+import NormalAnatomy from '../contentComponents/CT_normalAnatomy'
 
 class Header extends React.Component {
   constructor(){
@@ -33,8 +33,8 @@ handleClick() {
          </div>
          <nav>
       		<div className= {this.state.showMenu ? "navtop responsive": "navtop"}>
-      			<a href="#" className= "_pink">Home</a>
-      			<a href="#">CT Normal Anatomy</a>
+      			<a href='#' className= "_pink">Home</a>
+      			<a href= "#" >CT Normal Anatomy</a>
       			<a href="#">Oncology Cases</a>
       			<a href="#">Other</a>
       			<a href="#">About</a>

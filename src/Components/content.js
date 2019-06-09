@@ -9,14 +9,17 @@ import "../slick-carousel/slick/slick-theme.css";
 
 
 
+
+
+
 export default class Content extends React.Component {
   render(){
 
     return(
       <main className="all_content">
-      <div className = "textCenter">
-        <h2>The most Interesting Cases</h2>
-      </div>
+        <div className = "textCenter">
+        <h2 className="main_name">The most Interesting Cases</h2>
+        </div>
         <div className="content_anatomy_part">
 
           <Slaider className= "slaider"
@@ -44,8 +47,8 @@ export default class Content extends React.Component {
           </div>
 
           </Slaider>
-        </div>
 
+        </div>
       </main>
     )
   }
