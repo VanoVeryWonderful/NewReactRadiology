@@ -2,6 +2,10 @@ import React from 'react'
 import logo from '../logo.png'
 import '../index.css'
 import NormalAnatomy from '../contentComponents/CT_normalAnatomy'
+import {Route, NavLink} from 'react-router-dom'
+import AnatomyPart from '../contentComponents/anatomyPart'
+
+
 
 class Header extends React.Component {
   constructor(){
@@ -34,7 +38,7 @@ handleClick() {
          <nav>
       		<div className= {this.state.showMenu ? "navtop responsive": "navtop"}>
       			<a href='#' className= "_pink">Home</a>
-      			<a href= "#" >CT Normal Anatomy</a>
+      			<NavLink to= "/" >CT Normal Anatomy</NavLink>
       			<a href="#">Oncology Cases</a>
       			<a href="#">Other</a>
       			<a href="#">About</a>
@@ -45,6 +49,7 @@ handleClick() {
       			<a href="#" onClick={this.handleClick} className="menu_icon">&#9776;</a>
       		</div>
       	</nav>
+        <Route path = "/" exact component = {AnatomyPart}/>
       </header>
     )
   }
